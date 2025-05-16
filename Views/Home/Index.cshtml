@@ -1,21 +1,39 @@
-﻿@model List<projectoFinalV2.Models.Film>
-
-@{
+﻿@{
     ViewData["Title"] = "Home";
 }
 
-<div class="index-page">
-    <div class="contenedor-Carta">
-        @foreach(var film in Model)
-        {
-            <div class="carta">
-                <a href="@Url.Action("Final", "Home", new { filmId = film.id })">
-                    <img src="@film.image" class="imagen-carta mx-auto d-block">
-                </a>
-                <h3>@film.title</h3>
-                <p>Director: @film.director</p>
-                <p>Fecha de lanzamiento: @film.release_date</p>
-            </div>
-        }
+<div class="hero">
+  <div class="slides">
+    <div class="slide active"
+         style="background-image: url('/carrousel/fondo1.jpeg');">
     </div>
+    <div class="slide"
+         style="background-image: url('/carrousel/fondo2.jpeg');">
+    </div>
+    <div class="slide"
+         style="background-image: url('/carrousel/fondo3.jpeg');">
+    </div>
+    <div class="slide"
+         style="background-image: url('/carrousel/fondo4.jpeg');">
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div class="buttons">
+      <a asp-controller="Home" asp-action="Index">Botón 1</a>
+      <a asp-controller="Home" asp-action="Privacy">Botón 2</a>
+    </div>
+    <div class="description">
+      <h2>Bienvenido a Studio Ghibli</h2>
+      <p>
+        Aquí podrás descubrir la magia de cada película,
+        conocer su historia y a los maravillosos personajes
+        que han capturado nuestros corazones.
+      </p>
+    </div>
+  </div>
 </div>
+
+@section Scripts {
+  <script src="~/js/hero-slider.js" asp-append-version="true"></script>
+}

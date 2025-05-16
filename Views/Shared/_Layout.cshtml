@@ -2,27 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@ViewData["Title"] - projectoFinalV2</title>
-  <!-- Tailwind-generated CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"] - Studio Ghibli</title>
   <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="overflow-hidden">
 
-  <!-- Header -->
   @await Html.PartialAsync("_Header")
 
-  <!-- Contenido principal -->
-  <main class="flex-grow max-w-6xl mx-auto px-4 py-6">
+  <div>
     @RenderBody()
-  </main>
+  </div>
 
-  <!-- Footer -->
   @await Html.PartialAsync("_Footer")
 
-  <!-- Scripts -->
-  <script src="~/js/site.js" asp-append-version="true"></script>
   @await RenderSectionAsync("Scripts", required: false)
-
 </body>
 </html>
