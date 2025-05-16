@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  /* Header */
+  .site-header {
+    @apply bg-gray-800 text-white shadow-md;
+  }
+  .site-nav-link {
+    @apply px-3 py-1 hover:text-gray-300 transition;
+  }
+
+  /* Footer */
+  .site-footer {
+    @apply bg-gray-900 text-gray-400 p-4 text-center;
+  }
+}
+
+@tailwind utilities;

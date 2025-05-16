@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+    <!-- Logo + título -->
+    <a asp-controller="Home" asp-action="About" class="flex items-center space-x-2">
+      <img src="~/images/totoro.png"
+           alt="Totoro"
+           class="h-10 w-auto" />
+      <span class="text-xl font-semibold">Studio Ghibli</span>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="flex space-x-4">
+      <a asp-controller="Home" asp-action="Index" class="site-nav-link">Inicio</a>
+      <a asp-controller="Home" asp-action="Privacy" class="site-nav-link">Descripciones</a>
+    </nav>
+  </div>
+</header>
