@@ -5,20 +5,28 @@
       "PackagePath": "staticwebassets\\projectoFinalV2.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo1.jpeg",
-      "PackagePath": "staticwebassets\\carrousel\\fondo1.jpeg"
+      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo1.jpg",
+      "PackagePath": "staticwebassets\\carrousel\\fondo1.jpg"
     },
     {
-      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo2.jpeg",
-      "PackagePath": "staticwebassets\\carrousel\\fondo2.jpeg"
+      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo2.jpg",
+      "PackagePath": "staticwebassets\\carrousel\\fondo2.jpg"
     },
     {
-      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo3.jpeg",
-      "PackagePath": "staticwebassets\\carrousel\\fondo3.jpeg"
+      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo3.jpg",
+      "PackagePath": "staticwebassets\\carrousel\\fondo3.jpg"
     },
     {
       "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo4.jpg",
       "PackagePath": "staticwebassets\\carrousel\\fondo4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo5.jpg",
+      "PackagePath": "staticwebassets\\carrousel\\fondo5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo6.jpg",
+      "PackagePath": "staticwebassets\\carrousel\\fondo6.jpg"
     },
     {
       "Id": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\css\\site.css",

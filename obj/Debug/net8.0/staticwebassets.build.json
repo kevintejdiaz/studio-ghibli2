@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1oc1Tx4H57iSu6N7oChbE48Lcb5G7VUwiRDZwB5I0gI=",
+  "Hash": "fXcJzN/xkBuKgWUd57sn1wykvDjRhzLYkBRU9iEECdA=",
   "Source": "projectoFinalV2",
   "BasePath": "_content/projectoFinalV2",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\projectoFinalV2.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo1.jpeg",
+      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo1.jpg",
       "SourceId": "projectoFinalV2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\",
       "BasePath": "_content/projectoFinalV2",
-      "RelativePath": "carrousel/fondo1.jpeg",
+      "RelativePath": "carrousel/fondo1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,15 +71,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\carrousel\\fondo1.jpeg"
+      "OriginalItemSpec": "wwwroot\\carrousel\\fondo1.jpg"
     },
     {
-      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo2.jpeg",
+      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo2.jpg",
       "SourceId": "projectoFinalV2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\",
       "BasePath": "_content/projectoFinalV2",
-      "RelativePath": "carrousel/fondo2.jpeg",
+      "RelativePath": "carrousel/fondo2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\carrousel\\fondo2.jpeg"
+      "OriginalItemSpec": "wwwroot\\carrousel\\fondo2.jpg"
     },
     {
-      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo3.jpeg",
+      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo3.jpg",
       "SourceId": "projectoFinalV2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\",
       "BasePath": "_content/projectoFinalV2",
-      "RelativePath": "carrousel/fondo3.jpeg",
+      "RelativePath": "carrousel/fondo3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\carrousel\\fondo3.jpeg"
+      "OriginalItemSpec": "wwwroot\\carrousel\\fondo3.jpg"
     },
     {
       "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo4.jpg",
@@ -129,6 +129,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\carrousel\\fondo4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo5.jpg",
+      "SourceId": "projectoFinalV2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\",
+      "BasePath": "_content/projectoFinalV2",
+      "RelativePath": "carrousel/fondo5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carrousel\\fondo5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\carrousel\\fondo6.jpg",
+      "SourceId": "projectoFinalV2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\",
+      "BasePath": "_content/projectoFinalV2",
+      "RelativePath": "carrousel/fondo6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carrousel\\fondo6.jpg"
     },
     {
       "Identity": "C:\\Users\\kevin\\Desktop\\projectoFinalV2\\wwwroot\\css\\site.css",
