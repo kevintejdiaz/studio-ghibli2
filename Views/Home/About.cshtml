@@ -3,35 +3,42 @@
 }
 
 <div class="hero">
-
   <div class="slides">
-    <div class="slide active"
+    <div class="slide active fondo1 " 
          style="background-image: url('/carrousel/fondo1.jpg');">
     </div>
-    <div class="slide"
+    <div class="slide fondo2"
          style="background-image: url('/carrousel/fondo2.jpg');">
     </div>
-    <div class="slide"
+    <div class="slide fondo3"
          style="background-image: url('/carrousel/fondo3.jpg');">
     </div>
-    <div class="slide"
+    <div class="slide fondo4"
          style="background-image: url('/carrousel/fondo4.jpg');">
     </div>
-        <div class="slide"
+    <div class="slide fondo5"
          style="background-image: url('/carrousel/fondo5.jpg');">
     </div>
-        <div class="slide"
+    <div class="slide fondo6"
          style="background-image: url('/carrousel/fondo6.jpg');">
     </div>
   </div>
-  
+
+  <div class="hero-content">
     <div class="hero-description">
-      <h1>Gabriel León & Kevin Tejeda</h1>
+      <h1>Studio Ghibli</h1>
       <p>
-        Presentación de la colección de películas del Studio Ghibli. 
-        Aquí verás las historias detrás de cada clásico, sus personajes 
-        y la magia que ha enamorado al mundo.
+        Bienvenido a la enciclopedia definitiva de Studio Ghibli: un espacio 
+        donde descubrirás el origen de cada película, la visión de sus creadores 
+        y la magia que ha conquistado corazones en todo el mundo. Sumérgete en 
+        relatos inéditos sobre el proceso creativo de Hayao Miyazaki, Isao Takahata 
+        y su equipo; explora personajes inolvidables, desde Totoro hasta Chihiro; 
+        y admira los detalles de la animación artesanal y la banda sonora de Joe Hisaishi.
       </p>
     </div>
-
+  </div>
 </div>
+
+@section Scripts {
+  <script src="~/js/hero-slider.js" asp-append-version="true"></script>
+}

@@ -4,11 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>@ViewData["Title"] - Studio Ghibli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 </head>
 <body class="overflow-hidden">
 
-  @await Html.PartialAsync("_Header")
+  @{
+    var headerPartial = (string?)ViewData["HeaderPartial"] ?? "_Header";
+  }
+  @await Html.PartialAsync(headerPartial)
 
   <div>
     @RenderBody()
@@ -16,6 +20,7 @@
 
   @await Html.PartialAsync("_Footer")
 
-  @await RenderSectionAsync("Scripts", required: false)
+  <script src="~/lib/jquery/dist/jquery.js"></script>
+  @RenderSection("Scripts", required: false)
 </body>
 </html>

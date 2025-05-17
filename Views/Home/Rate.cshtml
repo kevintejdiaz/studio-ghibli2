@@ -1,0 +1,56 @@
+@model projectoFinalV2.Models.FilmRatings
+
+@{
+  ViewData["Title"] = "Valoraciones";
+  ViewData["HeaderPartial"] = "_HeaderNegro";
+}
+
+<div style="margin-top:15%;" class="rate-page">
+  <!-- Panel izquierdo: tarjeta de la película -->
+  <div class="rate-card">
+    <img src="@Model.Film.image" alt="@Model.Film.title" class="imagen-carta">
+    <h2>@Model.Film.title</h2>
+    <p>@Model.Film.description</p>
+  </div>
+
+  <!-- Panel derecho: valoraciones y formulario -->
+  <div class="rate-form">
+    <h3>Valoraciones</h3>
+    @if (!Model.Ratings.Any())
+    {
+        <p>Aún no hay valoraciones. ¡Sé el primero!</p>
+    }
+    <ul class="ratings-list">
+      @foreach(var r in Model.Ratings)
+      {
+        <li>
+          <strong>@r.UserName</strong> 
+            <span class="date">(@r.CreatedAt.ToLocalTime().ToString("dd/MM/yyyy"))</span>
+          <p>@r.Comment</p>
+        </li>
+      }
+    </ul>
+
+    <h3>¡Danos tu opinión!</h3>
+    <form asp-action="Rate" method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="All" class="text-error"></div>
+        <input asp-for="NewRating.FilmId" type="hidden" />
+      <div class="form-group">
+        <label asp-for="NewRating.UserName">Nombre</label>
+        <input asp-for="NewRating.UserName" />
+        <span asp-validation-for="NewRating.UserName" class="text-error"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="NewRating.Comment">Comentario</label>
+        <textarea asp-for="NewRating.Comment"></textarea>
+        <span asp-validation-for="NewRating.Comment" class="text-error"></span>
+      </div>
+    <button type="submit" class="btn-custom">Enviar</button>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+  <partial name="_ValidationScriptsPartial" />
+}

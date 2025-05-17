@@ -14,6 +14,7 @@ namespace projectoFinalV2.Models
 
         public DbSet<Film> Films { get; set; }
         public DbSet<People> People { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

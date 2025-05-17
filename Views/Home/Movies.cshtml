@@ -2,12 +2,14 @@
 
 @{
     ViewData["Title"] = "Personajes y Películas";
+    ViewData["HeaderPartial"] = "_HeaderNegro";
 }
+
 <div class="index-page">
     <div class="contenedor-Carta">
         @foreach (var film in Model.Films)
         {
-            <div class="carta">
+            <div onclick="location.href='@Url.Action("Rate","Home", new { filmId = film.id })'" class="carta">
                 <img src="@film.image" class="imagen-carta mx-auto d-block">
                 <h3>@film.title</h3>
                 <p>@film.description</p>

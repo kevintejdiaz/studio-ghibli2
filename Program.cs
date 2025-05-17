@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using projectoFinalV2.Models;
+using Microsoft.Extensions.DependencyInjection;
 using projectoFinalV2.Data;
-var builder = WebApplication.CreateBuilder(args);
+using projectoFinalV2.Models;
 
+var builder = WebApplication.CreateBuilder(args);
 
 // 1) Registrar AppDbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -10,13 +11,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // 2) Resto de servicios
 builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 3) Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -27,9 +28,16 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// 4) Ruteo MVC por defecto
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=About}/{id?}");
-SeedData.Initialize(app.Services);
+
+// 5) Seeding de datos: se ejecuta una sola vez al arrancar, sin bloquear el pipeline
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    SeedData.Initialize(services);
+}
 
 app.Run();
