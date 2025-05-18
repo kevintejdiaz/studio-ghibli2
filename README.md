@@ -28,3 +28,13 @@ Esta aplicación ASP .NET Core MVC es una “Filmografia” de Studio Ghibli que
 
 ## Estructura principal
 
+/Controllers – HomeController (acciones GET/POST, ratings)
+/Models – Film, Rating, FilmRatings, FilmPeople…
+/Data – AppDbContext + SeedData (fetch y persistencia inicial)
+/Migrations – historial de EF Core
+/Views – Razor views, layouts (_Layout, _Header, _HeaderNegro…)
+/wwwroot/css – site.css (tipografía, posiciones, gradientes)
+/wwwroot/js – hero-slider.js
+/wwwroot/images – assets (logos, fondos, etc.)
+Program.cs – configuración de servicios, middleware y seed en scope
+appsettings.json – cadena de conexión SQLite (Data Source=films.db)
